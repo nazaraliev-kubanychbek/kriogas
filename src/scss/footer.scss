@@ -1,0 +1,28 @@
+footer {
+    height: 125px;
+    background-color: #323232;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .footer__links {
+      display: flex;
+      margin-bottom: 22px;
+      list-style-type: none;
+    }
+    .footer__links li {
+      padding-right: 25px;
+    }
+    .footer__links li a {
+      @include font-style(400,14px ,16px, #fff);
+      font-family: $fontRoboto;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+    .copyright {
+      @include font-style(400,14px ,16px , #dcdcdc);
+      font-family: $fontRoboto;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }

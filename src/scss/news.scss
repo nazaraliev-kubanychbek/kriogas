@@ -1,0 +1,58 @@
+.news {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      align-items: center;
+    }
+    &__title {
+      font-family: $fontRoboto;
+      @include font-style(700,30px ,35px);
+    }
+    &__subtitle {
+      font-family: $fontRoboto;
+      @include font-style(300,16px ,19px);
+    }
+    &__btn {
+      font-family: $fontRoboto;
+      @include font-style(400,12px ,14px , #fff);
+      text-align: center;
+      letter-spacing: 0.05em;
+      background: #0f4898;
+      padding: 15px 25px;
+      border: none;
+      outline: none;
+    }
+    
+    &__block {
+      padding-right: 40px;
+      margin-bottom: 30px;
+    }
+    &__inblock {
+      padding: 0px 25px;
+    }
+    &__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+    .date {
+      @include font-style(300,11px ,0px);
+      font-family: $fontRoboto;
+      letter-spacing: 0.05em;
+      margin-bottom: 15px;
+    }
+    &__title-2 {
+      @include font-style(500,18px ,25px);
+      font-family: $fontRoboto;
+      letter-spacing: 0.03em;
+      margin-bottom: 15px;
+    }
+    &__text {
+      @include font-style(300,11px ,14px);
+      font-family: $fontRoboto;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+  }

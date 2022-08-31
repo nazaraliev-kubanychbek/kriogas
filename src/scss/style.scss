@@ -1,0 +1,52 @@
+$fontRoboto: "Roboto";
+$fontMonserrat: "Montserrat";
+@mixin logo {
+  font-family: $fontRoboto;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #0f4898;
+}
+@mixin font-style($fw, $fs, $lh, $c:#000) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+.col-4 {
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+@import "./header.scss";
+@import "./banner.scss";
+@import "./projects.scss";
+@import "./news.scss";
+@import "./footer.scss";
+@import "./media.scss";
+
+
+
+
+
